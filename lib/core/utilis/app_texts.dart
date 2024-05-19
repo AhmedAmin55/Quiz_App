@@ -13,5 +13,10 @@ class AppTexts{
   static const String continueWithFacebook="Continue With Facebook";
   static const String haveNotSignedUpYet="Haven't signed up yet?";
   static const String createAnAccount="Create an account";
-
+  // texts for signup page
+  static const String signup="Signup";
+  static const String userName="Username";
+  static const String hintUserName="Amino55";
+  static const String welcomeSignup="Welcome";
+  static const String createAccount="Create An Account";
 }

@@ -20,7 +20,7 @@ class _SplachScreenState extends State<SplachScreen> {
       seconds: 3,
     ),(){
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){
-        return loginApp();
+        return LoginPage();
       }));
     }
     );
@@ -39,7 +39,7 @@ class _SplachScreenState extends State<SplachScreen> {
           Spacer(),
           BounceInDown(
             child: Image.asset(
-              AppImages.logo,
+              AppImages.smallLogo,
               width:size.width*0.50 ,
             ),
           ),
