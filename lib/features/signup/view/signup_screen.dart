@@ -53,6 +53,9 @@ class SignupPage extends StatelessWidget {
                   labelText: AppTexts.userName,
                   hintText: AppTexts.hintUserName,
               ),
+              SizedBox(
+                height: size.height*0.03,
+              ),
               const CustomTextField(
                   labelText: AppTexts.password,
                   hintText: AppTexts.hintPassword),

@@ -3,9 +3,10 @@ import 'package:quizapp_clone/core/utilis/app_colors.dart';
 import 'package:quizapp_clone/core/utilis/app_texts.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key,required this.labelText,required this.hintText});
+  const CustomTextField({super.key,required this.labelText,required this.hintText,required this.keyboardType});
   final labelText;
   final hintText;
+  final keyboardType;
   @override
   Widget build(BuildContext context) {
     final size =MediaQuery.of(context).size;
