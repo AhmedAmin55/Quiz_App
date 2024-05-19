@@ -29,7 +29,7 @@ class CustomTextField extends StatelessWidget {
               borderSide: BorderSide(color: AppColors.black.withOpacity(0.70),width: 0.2)
           ),
         ),
-        keyboardType: TextInputType.visiblePassword,
+        keyboardType: keyboardType,
       ),
     );
   }
