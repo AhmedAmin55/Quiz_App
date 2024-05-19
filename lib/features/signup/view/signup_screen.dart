@@ -44,21 +44,26 @@ class SignupPage extends StatelessWidget {
                 height: size.height*0.05,
               ),
               const CustomTextField(
-                  labelText: AppTexts.email,
-                  hintText: AppTexts.hintEmail),
-              SizedBox(
-                height: size.height*0.03,
-              ),
-              const CustomTextField(
-                  labelText: AppTexts.userName,
-                  hintText: AppTexts.hintUserName,
+                labelText: AppTexts.email,
+                hintText: AppTexts.hintEmail,
+                keyboardType: TextInputType.emailAddress,
               ),
               SizedBox(
                 height: size.height*0.03,
               ),
               const CustomTextField(
-                  labelText: AppTexts.password,
-                  hintText: AppTexts.hintPassword),
+                labelText: AppTexts.userName,
+                hintText: AppTexts.hintUserName,
+                keyboardType: TextInputType.text,
+              ),
+              SizedBox(
+                height: size.height*0.03,
+              ),
+              const CustomTextField(
+                labelText: AppTexts.password,
+                hintText: AppTexts.hintPassword,
+                keyboardType: TextInputType.visiblePassword,
+              ),
               SizedBox(
                 height: size.height*0.03,
               ),
