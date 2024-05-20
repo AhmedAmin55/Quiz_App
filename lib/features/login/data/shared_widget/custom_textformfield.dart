@@ -21,7 +21,7 @@ class CustomTextField extends StatelessWidget {
           labelText: labelText,
           labelStyle: const TextStyle(
               fontSize: 19,
-              fontWeight: FontWeight.w500
+              fontWeight: FontWeight.w500,
           ),
           hintText: hintText,
           border: OutlineInputBorder(
