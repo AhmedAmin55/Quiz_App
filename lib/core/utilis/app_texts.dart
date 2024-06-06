@@ -20,4 +20,6 @@ class AppTexts{
   static const String welcomeSignup="Welcome";
   static const String noteSignup="Create An Account";
   static const String alreadyHaveAnAccount="Already have an account";
+  // texts for mainScreen page
+  static const String appName = "Quiz App";
 }
