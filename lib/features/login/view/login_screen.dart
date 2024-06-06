@@ -7,6 +7,7 @@ import 'package:quizapp_clone/core/shared_widgets/custom_textformfield.dart';
 import 'package:quizapp_clone/core/utilis/app_colors.dart';
 import 'package:quizapp_clone/core/utilis/app_images.dart';
 import 'package:quizapp_clone/core/utilis/app_texts.dart';
+import 'package:quizapp_clone/features/main_screen/view/main_screen.dart';
 import 'package:quizapp_clone/features/signup/view/signup_screen.dart';
 
 class LoginPage extends StatelessWidget {
@@ -89,7 +90,11 @@ class LoginPage extends StatelessWidget {
                 minWidth: double.infinity,
                 height: size.height*0.07,
                 color: AppColors.mainColor,
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){
+                    return const MainScreen();
+                  }));
+                },
                 child:const Text(
                   AppTexts.login,
                   style:TextStyle(
