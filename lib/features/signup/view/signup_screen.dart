@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp_clone/core/shared_widgets/container_for_media.dart';
 import 'package:quizapp_clone/core/shared_widgets/custom_textformfield.dart';
 import 'package:quizapp_clone/core/utilis/app_colors.dart';
 import 'package:quizapp_clone/core/utilis/app_images.dart';
@@ -99,67 +100,11 @@ class SignupPage extends StatelessWidget {
                 SizedBox(
                   height: size.height*0.02,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        color: AppColors.black.withOpacity(0.50),
-                        width: 0.4
-                    ),
-                    color: AppColors.white,
-          
-                  ),
-                  width: double.infinity,
-                  height: size.height*0.07,
-                  child:Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset(AppImages.googleIcon,width: 30,),
-                      ),
-                      const Text(
-                          AppTexts.continueWithGoogle,
-                          style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16
-                          )
-                      )
-                    ],
-                  ) ,
-                ),
+                CustomContainerForMedia(logo: AppImages.googleIcon, text: AppTexts.continueWithGoogle),
                 SizedBox(
                   height: size.height*0.04,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(
-                        color: AppColors.black.withOpacity(0.50),
-                        width: 0.4
-                    ),
-                    color: AppColors.white,
-          
-                  ),
-                  width: double.infinity,
-                  height: size.height*0.07,
-                  child:Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Image.asset(AppImages.facebookIcon,width: 30,),
-                      ),
-                      const Text(
-                          AppTexts.continueWithFacebook,
-                          style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16
-                          )
-                      )
-                    ],
-                  ) ,
-                ),
+                CustomContainerForMedia(logo: AppImages.facebookIcon, text: AppTexts.continueWithFacebook),
                 SizedBox(
                   height: size.height*0.05,
                 ),
