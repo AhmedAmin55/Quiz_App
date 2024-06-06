@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:quizapp_clone/core/shared_widgets/custom_textformfield.dart';
 import 'package:quizapp_clone/core/utilis/app_colors.dart';
 import 'package:quizapp_clone/core/utilis/app_images.dart';
 import 'package:quizapp_clone/core/utilis/app_texts.dart';
-import 'package:quizapp_clone/features/login/data/shared_widget/custom_textformfield.dart';
 import 'package:quizapp_clone/features/signup/view/signup_screen.dart';
 
 class LoginPage extends StatelessWidget {
